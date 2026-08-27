@@ -2,192 +2,184 @@
   "profile": {
     "name": "Kris",
     "initials": "KR",
-    "title": "Automation & Backend Systems",
-    "metaDescription": "Automation engineer portfolio focused on Oracle Cloud bot hosting, Discord systems, n8n workflows, GoHighLevel CRM, and API integrations.",
-    "profileImage": "assets/profile-placeholder.svg"
+    "title": "Automation Infrastructure & Backend Systems",
+    "metaDescription": "Kris builds Oracle Cloud infrastructure, APIs, Discord systems, n8n workflows, and CRM automations for teams that need reliable operations."
   },
   "hero": {
-    "eyebrow": "Automation Engineer | Oracle Cloud | Discord Bots | n8n | GoHighLevel",
-    "title": "I build backend systems that remove manual work and keep online businesses moving.",
-    "subtitle": "I design automations, connect APIs, host Discord bot stacks on Oracle Cloud Ubuntu, and build backend workflows that reduce manual work for e-commerce teams, online communities, and service businesses.",
-    "primaryCta": {
-      "label": "Work With Me",
-      "href": "#contact"
-    },
-    "secondaryCta": {
-      "label": "View Systems",
-      "href": "#systems"
-    }
+    "eyebrow": "Automation infrastructure · APIs · bots · CRM workflows",
+    "title": "I build the backend that lets small teams operate like bigger ones.",
+    "subtitle": "Bots, APIs, webhooks, CRM flows, and internal tools—designed as one dependable system. For always-on workloads, I can run multiple services on a managed Oracle Cloud server instead of scattering them across separate hosting plans.",
+    "primaryCta": { "label": "Tell me what needs to run", "href": "#contact" },
+    "secondaryCta": { "label": "See the systems", "href": "#work" }
   },
   "stats": [
-    {
-      "value": "24/7",
-      "label": "systemd-managed bot uptime mindset"
-    },
-    {
-      "value": "API",
-      "label": "Custom integrations and webhooks"
-    },
-    {
-      "value": "GHL",
-      "label": "CRM, SMS, funnels, automations"
-    }
+    { "value": "10+", "label": "managed bot and service workloads" },
+    { "value": "1 VM", "label": "shared production infrastructure" },
+    { "value": "24/7", "label": "process monitoring and auto-restart" }
   ],
-  "tools": [
-    "Oracle Cloud",
-    "systemd",
-    "Discord Bots",
-    "Python",
-    "n8n",
-    "GoHighLevel",
-    "APIs",
-    "Webhooks",
-    "Telnyx",
-    "JavaScript",
-    "Ubuntu",
-    "GitHub Deploy"
-  ],
-  "about": {
-    "title": "Backend automation for operators who need speed, reliability, and clean workflows.",
-    "body": "I help businesses connect their tools, automate repetitive tasks, and build systems that can run without constant manual checking. My work is focused on practical execution: Oracle Cloud Ubuntu hosting with systemd services, Discord bot infrastructure, n8n workflow automation, API and webhook integrations, SMS/CRM automations, and deploy tooling that keeps multi-bot stacks in sync.",
-    "specialties": [
-      "Oracle Cloud Ops",
-      "Workflow Automation",
-      "API Integrations",
-      "Discord Infrastructure",
-      "CRM Automation",
-      "Backend Operations"
-    ]
+  "serviceMap": ["REST APIs", "Discord bots", "n8n workers", "Webhooks", "Schedulers", "Admin tools"],
+  "infrastructure": {
+    "intro": "Oracle Cloud is still cloud infrastructure—but I manage the operating system and service layer directly. That gives an operation one place for its always-on APIs, bots, workers, logs, secrets, and deployments.",
+    "plainLanguage": "Think of it as a secure computer that stays online in the cloud. I install each service, keep it running, restart it automatically if it fails, and expose only the endpoints the business actually needs.",
+    "options": [
+      {
+        "label": "My managed-VM approach",
+        "title": "Shared infrastructure you control",
+        "featured": true,
+        "items": [
+          "Several APIs, bots, and workers can share one compute allocation",
+          "A predictable server-cost baseline for steady, always-on workloads",
+          "Direct control of processes, logs, environment variables, and networking",
+          "Best fit when services need to stay online and work together continuously"
+        ]
+      },
+      {
+        "label": "Managed platforms / serverless",
+        "title": "Fast deployment with platform abstraction",
+        "featured": false,
+        "items": [
+          "Convenient for prototypes, isolated apps, and bursty or short-lived workloads",
+          "Costs can grow across services, execution, build minutes, or usage tiers",
+          "Less operating-system work, with less low-level control in return",
+          "A useful option when speed-to-deploy matters more than consolidating services"
+        ]
+      }
+    ],
+    "note": "The right hosting choice depends on workload and traffic. I use the managed-VM model where consolidation, control, and an always-on cost baseline create a practical advantage—not because every project belongs on one server."
   },
-  "services": [
-    {
-      "icon": "⚙️",
-      "title": "n8n Workflow Automation",
-      "description": "Build automated workflows for lead routing, notifications, data syncing, reporting, and internal operations."
-    },
-    {
-      "icon": "🔌",
-      "title": "API & Webhook Integrations",
-      "description": "Connect apps together using APIs, webhooks, custom payloads, and backend logic."
-    },
-    {
-      "icon": "🤖",
-      "title": "Discord Bot Systems",
-      "description": "Create and maintain Discord bots for announcements, monitoring, slash commands, role workflows, and community operations."
-    },
-    {
-      "icon": "📲",
-      "title": "GoHighLevel Automation",
-      "description": "Set up GHL workflows, SMS/email automations, forms, funnels, pipelines, and customer follow-up systems."
-    },
-    {
-      "icon": "☁️",
-      "title": "Oracle Cloud & systemd Hosting",
-      "description": "Deploy bot stacks on Oracle Ubuntu, install mirror-world-style systemd units, configure auto-restart, manage secrets and env vars, and keep production services running."
-    },
-    {
-      "icon": "🧰",
-      "title": "Deploy, Sync & Admin Tooling",
-      "description": "Build deploy scripts, manifest verification, SSH workflows, and admin commands so code updates reach the server safely and predictably."
-    }
-  ],
+  "featuredCase": {
+    "client": "Reselling Secrets",
+    "title": "A multi-service operations stack on one Oracle Cloud host.",
+    "summary": "I built and operate an Ubuntu-based environment for Discord automation, API endpoints, background jobs, and admin tooling. Instead of treating every bot as a separate hosting product, the services share a controlled infrastructure layer with individual process boundaries.",
+    "image": "assets/oracle-cloud-bot-infrastructure.svg",
+    "outcomes": [
+      "10+ managed services",
+      "systemd auto-restart",
+      "centralized logs",
+      "controlled SSH deploys",
+      "separate secrets and service units",
+      "API and webhook endpoints"
+    ],
+    "stack": ["Oracle Cloud", "Ubuntu", "systemd", "Python", "Node.js", "GitHub"]
+  },
   "projects": [
     {
-      "title": "Discord Automation Bot Stack",
-      "description": "Multi-bot Discord setup for community announcements, role-based alerts, slash commands, monitoring channels, and automated operational posting.",
+      "number": "01",
+      "title": "Discord operations stack",
+      "description": "Bots for announcements, role workflows, monitoring, moderation support, slash commands, and staff operations—built as a coordinated system rather than isolated scripts.",
       "image": "assets/discord-bot-flow-showcase.svg",
-      "video": "",
-      "tags": [
-        "Discord.js",
-        "Oracle Cloud",
-        "Slash Commands",
-        "Automation"
-      ]
+      "tags": ["Discord", "Automation", "Operations"]
     },
     {
-      "title": "GHL + SMS Automation Workflow",
-      "description": "GoHighLevel CRM workflow for opt-ins, customer replies, failed billing follow-ups, Telnyx SMS routing, and segmented staff notifications.",
+      "number": "02",
+      "title": "CRM and SMS follow-up",
+      "description": "GoHighLevel and Telnyx workflows that route opt-ins, replies, failed-payment follow-ups, and staff notifications without repeated manual handling.",
       "image": "assets/ghl-sms-automation-workflow.svg",
-      "video": "",
-      "tags": [
-        "GoHighLevel",
-        "Telnyx",
-        "SMS",
-        "CRM"
-      ]
+      "tags": ["GoHighLevel", "Telnyx", "CRM"]
     },
     {
-      "title": "n8n API Operations Hub",
-      "description": "n8n workflows that move data between tools, trigger alerts, clean webhook payloads, and cut down repeated admin work across connected systems.",
+      "number": "03",
+      "title": "API operations workflows",
+      "description": "n8n flows that validate webhook payloads, move data between tools, trigger alerts, and give teams a clearer operational trail.",
       "image": "assets/n8n-api-operations-hub.svg",
-      "video": "",
-      "tags": [
-        "n8n",
-        "APIs",
-        "Webhooks",
-        "Data Sync"
-      ]
-    },
-    {
-      "title": "Oracle Cloud Bot Infrastructure",
-      "description": "Ubuntu deployment stack for running many bots from one repo root: shared Python venv, per-bot systemd services, RSAdminBot sync/deploy commands, manifest checks, and SSH-managed updates.",
-      "image": "assets/oracle-cloud-bot-infrastructure.svg",
-      "video": "",
-      "tags": [
-        "Oracle Cloud",
-        "systemd",
-        "Ubuntu",
-        "Python"
-      ]
+      "tags": ["n8n", "APIs", "Webhooks"]
     }
   ],
-  "proof": {
-    "intro": "Live system visuals, walkthrough videos, and screenshots you can expand.",
-    "showcase": {
-      "title": "Live Systems Showcase",
-      "description": "Animated overview of bot operations, CRM automations, n8n workflows, API syncs, and Oracle Cloud infrastructure.",
-      "src": "assets/automation-backend-live-showcase.svg",
-      "alt": "Automation and backend systems animated showcase"
+  "servicesIntro": "I work across the complete path: understand the operation, connect the tools, deploy the backend, and make it maintainable.",
+  "services": [
+    {
+      "number": "01",
+      "title": "Automation architecture",
+      "description": "Map the manual process, decide what should trigger what, and design the system before adding more tools.",
+      "deliverables": "Workflow maps · n8n flows · scheduling · alerts"
     },
-    "slides": [
+    {
+      "number": "02",
+      "title": "APIs and integrations",
+      "description": "Connect platforms with custom endpoints, webhooks, validation, transformations, and the business logic between them.",
+      "deliverables": "REST APIs · webhooks · data sync · third-party services"
+    },
+    {
+      "number": "03",
+      "title": "Bots and internal tools",
+      "description": "Build Discord bots and lightweight admin tools that turn routine team actions into clear, permission-aware workflows.",
+      "deliverables": "Commands · notifications · moderation · admin controls"
+    },
+    {
+      "number": "04",
+      "title": "Cloud deployment and operations",
+      "description": "Deploy and maintain always-on services with process supervision, logs, secrets, controlled updates, and practical recovery paths.",
+      "deliverables": "Oracle Cloud · Ubuntu · systemd · deploy tooling"
+    },
+    {
+      "number": "05",
+      "title": "CRM and customer workflows",
+      "description": "Automate lead capture, messaging, pipeline movement, and follow-up around the way staff already work.",
+      "deliverables": "GoHighLevel · SMS · forms · pipelines"
+    }
+  ],
+  "about": {
+    "title": "I’m most useful when the tools already exist—but the system between them does not.",
+    "body": "I focus on the operational layer behind the interface: what happens after a form is submitted, a customer replies, a Discord command runs, an API fails, or a process restarts. My goal is a setup the team can understand, operate, and grow without adding unnecessary complexity.",
+    "specialties": ["Oracle Cloud operations", "Workflow automation", "API integrations", "Discord infrastructure", "CRM automation", "Backend troubleshooting"]
+  },
+  "process": [
+    { "title": "Understand", "description": "Trace the real workflow, including exceptions and staff handoffs." },
+    { "title": "Build", "description": "Connect the tools, write the logic, and make ownership visible." },
+    { "title": "Run", "description": "Deploy with monitoring, logs, recovery, and a maintainable handoff." }
+  ],
+  "proof": {
+    "intro": "A closer look at the flows and infrastructure behind the finished experience.",
+    "showcase": {
+      "title": "Discord, GHL, n8n, APIs, and Oracle Cloud—working together",
+      "description": "A visual overview of business channels, automation logic, hosted APIs, customer messaging, and infrastructure working as one operations layer.",
+      "src": "assets/automation-backend-live-showcase.svg",
+      "alt": "Automation and backend systems architecture overview"
+    },
+    "items": [
       {
         "type": "embed",
-        "title": "Workflow Walkthrough",
-        "description": "Loom demo of backend automation and bot operations in practice.",
+        "title": "Workflow walkthrough",
+        "description": "A recorded look at backend automation and bot operations in practice.",
         "src": "https://www.loom.com/embed/f92c44c8c8c04ecdb20bb5aa7aefa04b"
       },
       {
         "type": "image",
-        "title": "API Integration Layer",
-        "description": "Webhook and API connections between Discord bots, CRM tools, sheets, and third-party services.",
-        "src": "assets/automation-backend-showcase-base.svg"
-      },
-      {
-        "type": "video",
-        "title": "Bot Demo Video",
-        "description": "Add an MP4 path when ready, e.g. assets/demo.mp4",
-        "src": "",
-        "poster": ""
+        "title": "Discord bot flow",
+        "description": "How user actions, operational logic, alerts, and hosted services connect.",
+        "src": "assets/discord-bot-flow-showcase.svg"
       }
     ]
   },
-  "testimonials": [
+  "standards": [
     {
-      "quote": "Fast, practical, and easy to work with. The workflow was built around how our business actually operates.",
-      "author": "Pawel Sniadala, Amazon FBA Seller"
+      "number": "01",
+      "title": "Failures leave evidence",
+      "description": "Important services write useful logs and expose failure paths, so a problem can be traced instead of silently disappearing.",
+      "evidence": "centralized logs · error routes · status checks"
     },
     {
-      "quote": "The bot and automation setup saved hours of repeated admin work each week.",
-      "author": "Cho, Reselling Secrets"
+      "number": "02",
+      "title": "Processes recover",
+      "description": "Always-on workloads run under process supervision with restart rules and clear service boundaries.",
+      "evidence": "systemd units · auto-restart · isolated services"
     },
     {
-      "quote": "He created a simple but useful system for our Facebook dropshipping business. It helped us stay organized with listings, order sheets, and profit/loss calculations.",
-      "author": "Vanessa Colmenares, WAG - Facebook Dropshipping Automation"
+      "number": "03",
+      "title": "Deployments are controlled",
+      "description": "Updates follow a repeatable path with checks around the code, service configuration, and production environment.",
+      "evidence": "GitHub · SSH workflows · manifest checks"
+    },
+    {
+      "number": "04",
+      "title": "The handoff is usable",
+      "description": "The team gets a clear view of what runs where, how to inspect it, and which parts they own after delivery.",
+      "evidence": "service inventory · operating notes · ownership"
     }
   ],
   "contact": {
-    "title": "Need a system built or fixed?",
-    "body": "Send me what you are trying to automate, what tools you use, and where the manual work is slowing you down. I can help map the workflow and build the backend system around it.",
+    "title": "Let’s turn it into infrastructure.",
+    "body": "Send me the process that is slowing your team down, the tools involved, and what a reliable outcome should look like. I’ll help you find the simplest useful system behind it.",
     "email": "mailto:apaapkristian@gmail.com",
     "facebook": "https://www.facebook.com/krislangpo",
     "whatsapp": "https://wa.me/639055196946"

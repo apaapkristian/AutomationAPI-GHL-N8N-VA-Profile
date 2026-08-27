@@ -3,123 +3,130 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">Automation & Backend Systems Portfolio</title>
-  <meta name="description" id="page-description" content="Automation Engineer portfolio focused on API integrations, n8n, GoHighLevel, Discord bots, and backend systems." />
-  <link rel="stylesheet" href="styles.css" />
+  <title id="page-title">Kris — Automation Infrastructure & Backend Systems</title>
+  <meta name="description" id="page-description" content="Automation infrastructure, APIs, Discord systems, CRM workflows, and Oracle Cloud operations built by Kris." />
+  <meta name="theme-color" content="#f4f0e7" />
+  <link rel="stylesheet" href="styles.css?v=20260827-contact5" />
 </head>
 <body>
-  <div class="site-bg"></div>
-
-  <header class="nav">
-    <a class="brand" href="#home">
-      <span class="brand-mark" id="brand-initials">VA-KRIS</span>
-      <span id="brand-name">Automation Systems</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Kris portfolio home">
+      <span class="brand-mark" id="brand-initials">KR</span>
+      <span class="brand-copy"><strong id="brand-name">Kris</strong><small>Automation systems</small></span>
     </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">☰</button>
-    <nav id="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#systems">Systems</a>
-      <a href="#proof">Proof</a>
-      <a href="#contact" class="nav-cta">Work With Me</a>
+    <nav class="site-nav" id="nav-links" aria-label="Main navigation">
+      <a href="#infrastructure">Infrastructure</a><a href="#work">Work</a><a href="#services">Services</a><a href="#proof">Proof</a>
     </nav>
+    <div class="header-actions">
+      <button class="project-launcher" type="button" aria-label="Open project contact panel" aria-expanded="false" aria-controls="project-sheet" data-project-toggle>
+        <span class="project-launcher-label">Start a project</span>
+        <span class="project-token" aria-hidden="true">
+          <span class="project-token-face project-token-front">↗</span>
+          <span class="project-token-face project-token-back">KR</span>
+        </span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    </div>
   </header>
-
-  <main>
-    <section class="hero" id="home">
+  <main id="main">
+    <section class="hero section-shell" id="home">
       <div class="hero-copy">
-        <p class="eyebrow" id="hero-eyebrow">Automation Engineer | API Integrations | GoHighLevel | n8n</p>
-        <h1 id="hero-title">I build backend systems that remove manual work and keep online businesses moving.</h1>
+        <p class="eyebrow" id="hero-eyebrow">Automation infrastructure · APIs · bots · CRM workflows</p>
+        <h1 id="hero-title">I build the backend that lets small teams operate like bigger ones.</h1>
         <p class="hero-text" id="hero-subtitle"></p>
         <div class="hero-actions">
-          <a class="btn primary" id="primary-cta" href="#contact">Book a Build Call</a>
-          <a class="btn secondary" id="secondary-cta" href="#systems">View Systems</a>
+          <a class="button button-primary" id="primary-cta" href="#contact" data-project-toggle>Tell me what needs to run</a>
+          <a class="button button-text" id="secondary-cta" href="#work">See the systems <span aria-hidden="true">↘</span></a>
         </div>
-        <div class="stats" id="stats"></div>
+        <div class="stats" id="stats" aria-label="Selected infrastructure facts"></div>
       </div>
-      <div class="hero-card">
-        <div class="profile-frame">
-          <img id="profile-image" src="" alt="Profile image" />
+      <div class="system-console" aria-label="Illustration of services sharing one managed Oracle Cloud server">
+        <div class="console-bar"><span class="status-dot"></span><span>production / oracle-ubuntu-01</span><span class="console-status">healthy</span></div>
+        <div class="console-body">
+          <div class="server-node"><span class="node-label">ONE MANAGED VM</span><strong>Oracle Cloud</strong><small>Ubuntu · systemd · secure access</small></div>
+          <div class="service-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="service-grid" id="service-map"></div>
+          <div class="console-log"><span>$ systemctl --type=service --state=running</span><span class="log-good">● APIs, bots and workers online</span><span>↳ centralized logs · controlled deploys · auto-restart</span></div>
         </div>
-        <div class="tool-cloud" id="tool-cloud"></div>
       </div>
     </section>
-
-    <section class="section split" id="about">
-      <div>
-        <p class="section-kicker">About</p>
-        <h2 id="about-title">Backend automation for operators who need speed, reliability, and clean workflows.</h2>
-      </div>
-      <div>
-        <p id="about-body"></p>
-        <div class="chips" id="specialties"></div>
-      </div>
+    <section class="manifesto"><div class="section-shell manifesto-inner"><p>My infrastructure approach</p><h2>One cloud server. Many production services. A predictable operating baseline.</h2></div></section>
+    <section class="section section-shell infrastructure" id="infrastructure">
+      <div class="section-heading"><div><p class="section-kicker">01 / Infrastructure</p><h2>Cloud hosting that works more like a dedicated remote computer.</h2></div><p id="infrastructure-intro"></p></div>
+      <div class="plain-language"><span class="plain-language-label">In plain English</span><p id="plain-language-copy"></p></div>
+      <div class="comparison" id="comparison-grid"></div><p class="comparison-note" id="comparison-note"></p>
     </section>
-
-    <section class="section" id="services">
-      <div class="section-head">
-        <p class="section-kicker">Services</p>
-        <h2>What I can build for you</h2>
-      </div>
-      <div class="grid cards" id="services-grid"></div>
+    <section class="section section-shell work" id="work">
+      <div class="section-heading compact"><div><p class="section-kicker">02 / Selected work</p><h2>Systems designed around real operations.</h2></div><p>Not disconnected demos—working parts of the businesses and communities they support.</p></div>
+      <article class="featured-case" id="featured-case"></article><div class="project-grid" id="project-grid"></div>
     </section>
-
-    <section class="section dark" id="systems">
-      <div class="section-head">
-        <p class="section-kicker">Systems</p>
-        <h2>Featured automation and backend builds</h2>
-      </div>
-      <div class="project-grid" id="project-grid"></div>
+    <section class="section section-shell" id="services">
+      <div class="section-heading compact"><div><p class="section-kicker">03 / What I build</p><h2>From a manual bottleneck to a system your team can rely on.</h2></div><p id="services-intro"></p></div>
+      <div class="services-list" id="services-grid"></div>
     </section>
-
-    <section class="section" id="proof">
-      <div class="section-head">
-        <p class="section-kicker">Proof</p>
-        <h2>Workflow demos, screenshots, and results</h2>
-        <p id="proof-intro">Live system visuals, walkthrough videos, and screenshots you can expand.</p>
-      </div>
-      <div class="proof-showcase reveal" id="proof-showcase"></div>
-      <div class="proof-carousel-wrap reveal" id="proof-carousel-wrap" hidden>
-        <div class="proof-carousel" id="proof-carousel">
-          <button type="button" class="carousel-btn prev" id="proof-prev" aria-label="Previous slide">‹</button>
-          <div class="proof-carousel-viewport">
-            <div class="proof-carousel-track" id="proof-carousel-track"></div>
-          </div>
-          <button type="button" class="carousel-btn next" id="proof-next" aria-label="Next slide">›</button>
-        </div>
-        <div class="proof-carousel-meta" id="proof-carousel-meta"></div>
-        <div class="proof-carousel-dots" id="proof-carousel-dots"></div>
-      </div>
+    <section class="section section-shell about" id="about">
+      <div class="about-lead"><p class="section-kicker">04 / Working with me</p><h2 id="about-title"></h2></div>
+      <div class="about-detail"><p id="about-body"></p><div class="specialties" id="specialties"></div></div>
+      <ol class="process-list" id="process-list"></ol>
     </section>
-
-    <section class="section testimonials">
-      <div class="section-head">
-        <p class="section-kicker">Testimonials</p>
-        <h2>What clients and operators can say</h2>
-      </div>
-      <div class="grid cards" id="testimonials-grid"></div>
+    <section class="section section-shell proof" id="proof">
+      <div class="section-heading compact"><div><p class="section-kicker">05 / Proof of work</p><h2>Architecture, workflow, and system evidence.</h2></div><p id="proof-intro"></p></div>
+      <div class="proof-showcase" id="proof-showcase"></div><div class="proof-grid" id="proof-grid"></div>
     </section>
-
-    <section class="section contact" id="contact">
-      <div>
-        <p class="section-kicker">Contact</p>
-        <h2 id="contact-title">Need a system built or fixed?</h2>
-        <p id="contact-body"></p>
-      </div>
-      <div class="contact-card" id="contact-links"></div>
+    <section class="section section-shell standards" id="standards" aria-labelledby="standards-title">
+      <div class="section-heading compact"><div><p class="section-kicker">06 / Operational standard</p><h2 id="standards-title">A build is not finished when it only works on the happy path.</h2></div><p>These are the practical safeguards I build around production systems so the team can operate them after handoff.</p></div>
+      <div class="standards-grid" id="standards-grid"></div>
     </section>
+    <section class="contact" id="contact"><div class="section-shell contact-inner"><div><p class="section-kicker">Have a manual process or scattered system?</p><h2 id="contact-title">Let’s turn it into infrastructure.</h2></div><div class="contact-copy"><p id="contact-body"></p><div class="contact-links" id="contact-links"></div></div></div></section>
   </main>
+  <footer class="site-footer section-shell"><span><strong id="footer-name">Kris</strong> — Automation systems</span><span>Systems that work after handoff.</span></footer>
 
-  <footer>
-    <span id="footer-name">Automation Systems</span>
-    <span>VA-Kris 2026</span>
-  </footer>
+  <div class="project-scrim" data-project-scrim></div>
+  <aside class="project-sheet" id="project-sheet" role="dialog" aria-modal="true" aria-labelledby="project-sheet-title" aria-hidden="true" data-project-sheet>
+    <div class="project-story">
+      <p class="section-kicker">Start with the operation</p>
+      <h2>Tell me what needs to work when nobody is watching.</h2>
+      <p>I’ll look at the process, the tools already involved, and the simplest reliable backend behind it.</p>
+      <ul>
+        <li>Automation and workflow design</li>
+        <li>APIs, webhooks, and integrations</li>
+        <li>Oracle Cloud deployment and operations</li>
+        <li>Discord, n8n, GoHighLevel, and Telnyx</li>
+      </ul>
+      <small>No sales funnel. Just enough context to start a useful conversation.</small>
+    </div>
+    <div class="project-form-panel">
+      <button class="project-sheet-close" type="button" aria-label="Close project contact panel" data-project-close>Close ×</button>
+      <span class="form-kicker">Project brief</span>
+      <h2 id="project-sheet-title">What are you trying to automate?</h2>
+      <p class="form-intro">Complete the short brief and I’ll prepare an email in your mail app. Nothing entered here is stored by this page.</p>
+      <form class="project-form" data-project-form>
+        <div class="field-row">
+          <label>Name<input name="name" type="text" autocomplete="name" required placeholder="Your name" /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com" /></label>
+        </div>
+        <label>What needs to work?
+          <textarea name="brief" rows="5" required placeholder="Describe the manual process, the problem, and what a reliable result should look like."></textarea>
+        </label>
+        <fieldset>
+          <legend>Tools involved <span>(choose any)</span></legend>
+          <div class="tool-options">
+            <label><input type="checkbox" name="tools" value="Oracle Cloud" /> Oracle Cloud</label>
+            <label><input type="checkbox" name="tools" value="Discord" /> Discord</label>
+            <label><input type="checkbox" name="tools" value="n8n" /> n8n</label>
+            <label><input type="checkbox" name="tools" value="GoHighLevel" /> GoHighLevel</label>
+            <label><input type="checkbox" name="tools" value="APIs / webhooks" /> APIs / webhooks</label>
+            <label><input type="checkbox" name="tools" value="Other / not sure" /> Other / not sure</label>
+          </div>
+        </fieldset>
+        <button class="project-submit" type="submit">Prepare my email <span>↗</span></button>
+      </form>
+      <div class="project-direct"><span>Prefer a direct message?</span><a href="https://wa.me/639055196946" target="_blank" rel="noreferrer">Open WhatsApp ↗</a></div>
+    </div>
+  </aside>
 
-  <div class="lightbox" id="lightbox" hidden aria-hidden="true">
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
-    <div class="lightbox-content" id="lightbox-content"></div>
-  </div>
-
-  <script src="script.js"></script>
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview">Close ×</button><div class="lightbox-content" id="lightbox-content"></div></div>
+  <script src="script.js?v=20260827-contact5"></script>
 </body>
 </html>
