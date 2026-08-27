@@ -1,124 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">Oracle Cloud Bot Infrastructure</title>
-  <desc id="desc">Animated dark themed infrastructure diagram showing Discord bot services hosted on cloud compute with monitoring, database, scheduler, and API worker components.</desc>
+  <title id="title">One Oracle Cloud VM running multiple production services</title>
+  <desc id="desc">A clean infrastructure diagram showing Discord bots, APIs, workers and schedulers managed on one Ubuntu server with systemd, centralized logs and controlled deployments.</desc>
   <defs>
-    <radialGradient id="bgGlow" cx="70%" cy="20%" r="70%">
-      <stop offset="0" stop-color="#123b5f" stop-opacity=".85"/>
-      <stop offset=".45" stop-color="#071827" stop-opacity="1"/>
-      <stop offset="1" stop-color="#050914" stop-opacity="1"/>
-    </radialGradient>
-    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#0f1e2d"/>
-      <stop offset="1" stop-color="#070b14"/>
-    </linearGradient>
-    <linearGradient id="cyan" x1="0" x2="1">
-      <stop offset="0" stop-color="#2ed3ff"/>
-      <stop offset="1" stop-color="#42f5b6"/>
-    </linearGradient>
-    <linearGradient id="redline" x1="0" x2="1">
-      <stop offset="0" stop-color="#ff4b4b"/>
-      <stop offset="1" stop-color="#ff8a3d"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".45"/>
-    </filter>
-    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" fill="none" stroke="#25465f" stroke-width="1" opacity=".23"/>
-      <circle cx="2" cy="2" r="1" fill="#365a73" opacity=".45"/>
-    </pattern>
     <style>
-      .title{font:800 46px Inter,Segoe UI,Arial,sans-serif;fill:#fff;letter-spacing:-1px}.sub{font:500 17px Inter,Segoe UI,Arial,sans-serif;fill:#b7d2e4}.mini{font:700 12px Inter,Segoe UI,Arial,sans-serif;fill:#d9f5ff}.muted{font:500 11px Inter,Segoe UI,Arial,sans-serif;fill:#7f9cad}.ok{fill:#42f5b6}.warn{fill:#ffb84d}.bad{fill:#ff5757}.card{fill:url(#panel);stroke:#26465d;stroke-width:1.2}.chip{fill:#0d2435;stroke:#245c78}.line{fill:none;stroke:url(#cyan);stroke-width:3;stroke-dasharray:8 13;stroke-linecap:round;filter:url(#glow)}.thin{fill:none;stroke:#39586b;stroke-width:2;stroke-linecap:round}.node{fill:#0b1724;stroke:#2d617a;stroke-width:1.4}.nodeText{font:700 13px Inter,Segoe UI,Arial,sans-serif;fill:#e7faff}.nodeSmall{font:500 10px Inter,Segoe UI,Arial,sans-serif;fill:#8eb2c5}.log{font:500 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#a7c1d2}.pulse{animation:pulse 2.8s infinite ease-in-out}.float{animation:float 5s infinite ease-in-out}.flowA{animation:dash 5s linear infinite}.flowB{animation:dash 7s linear infinite reverse}@keyframes dash{to{stroke-dashoffset:-140}}@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      .bg{fill:#f4f0e7}.paper{fill:#fffdf8}.ink{fill:#14221f}.muted{fill:#5f6b66}.orange{fill:#ff5a35}.green{fill:#1e6b52}.line{stroke:#14221f;stroke-width:2;fill:none}.softline{stroke:#c8c2b6;stroke-width:1.5;fill:none}.dash{stroke:#5f6b66;stroke-width:1.5;stroke-dasharray:6 7;fill:none}
+      .kicker{font:700 14px Consolas,monospace;letter-spacing:1.7px;fill:#c93618}.title{font:700 45px Arial,sans-serif;letter-spacing:-1.8px;fill:#14221f}.sub{font:400 18px Arial,sans-serif;fill:#5f6b66}.label{font:700 12px Consolas,monospace;letter-spacing:1px;fill:#5f6b66}.h{font:700 24px Arial,sans-serif;letter-spacing:-.6px;fill:#14221f}.body{font:400 15px Arial,sans-serif;fill:#5f6b66}.small{font:700 12px Arial,sans-serif;fill:#14221f}.mono{font:400 12px Consolas,monospace;fill:#5f6b66}.white{fill:#fffdf8}
     </style>
   </defs>
-  <rect width="1200" height="720" fill="url(#bgGlow)"/>
-  <rect width="1200" height="720" fill="url(#grid)" opacity=".8"/>
-  <circle cx="935" cy="128" r="210" fill="#1a76bd" opacity=".12"/>
-  <circle cx="540" cy="625" r="310" fill="#38e2c1" opacity=".08"/>
+  <rect class="bg" width="1200" height="720"/>
+  <rect x="34" y="34" width="1132" height="652" fill="none" stroke="#14221f" stroke-width="2"/>
 
-  <g transform="translate(62 54)">
-    <text class="title">Oracle Cloud Bot Infrastructure</text>
-    <text class="sub" y="38">Cloud-hosted Discord bot stack with workers, API services, sync jobs, and uptime monitoring.</text>
-    <g transform="translate(0 70)">
-      <rect class="chip" rx="18" width="128" height="36"/><text class="mini" x="21" y="23">Ubuntu VPS</text>
-      <rect class="chip" x="144" rx="18" width="116" height="36"/><text class="mini" x="168" y="23">Docker</text>
-      <rect class="chip" x="276" rx="18" width="126" height="36"/><text class="mini" x="297" y="23">Systemd</text>
-      <rect class="chip" x="418" rx="18" width="112" height="36"/><text class="mini" x="445" y="23">Logs</text>
+  <text x="72" y="87" class="kicker">FEATURED INFRASTRUCTURE / RESELLING SECRETS</text>
+  <text x="72" y="143" class="title">One Oracle VM. Many production services.</text>
+  <text x="72" y="177" class="sub">A controlled home for always-on bots, APIs, workers, schedulers, logs, and deployments.</text>
+  <g transform="translate(925 75)">
+    <rect width="200" height="92" class="ink"/>
+    <text x="20" y="30" class="label white">PRODUCTION BASELINE</text>
+    <text x="20" y="61" font-family="Arial,sans-serif" font-size="19" font-weight="700" class="white">10+ services · 24/7</text>
+  </g>
+
+  <g transform="translate(72 230)">
+    <rect width="330" height="292" class="paper" stroke="#14221f" stroke-width="2"/>
+    <text x="24" y="36" class="label">HOSTED WORKLOADS</text>
+    <g transform="translate(24 62)">
+      <rect width="282" height="52" fill="#f4f0e7" stroke="#c8c2b6"/>
+      <circle cx="26" cy="26" r="8" fill="#5865f2"/><text x="46" y="31" class="small">Discord bot services</text>
+      <rect y="62" width="282" height="52" fill="#f4f0e7" stroke="#c8c2b6"/>
+      <circle cx="26" cy="88" r="8" class="orange"/><text x="46" y="93" class="small">REST APIs + webhooks</text>
+      <rect y="124" width="282" height="52" fill="#f4f0e7" stroke="#c8c2b6"/>
+      <circle cx="26" cy="150" r="8" fill="#ea4b71"/><text x="46" y="155" class="small">n8n workers + integrations</text>
+      <rect y="186" width="282" height="52" fill="#f4f0e7" stroke="#c8c2b6"/>
+      <circle cx="26" cy="212" r="8" class="green"/><text x="46" y="217" class="small">Schedulers + admin tools</text>
     </g>
   </g>
 
-  <!-- central cloud / compute -->
-  <g transform="translate(470 180)" filter="url(#shadow)">
-    <path d="M95 95c-28 0-50-20-50-46 0-24 19-44 44-46C101-21 136-32 166-15c21 12 33 34 31 57 25 3 44 23 44 49 0 28-23 50-54 50H95z" fill="#0d1f32" stroke="#2ed3ff" stroke-width="2"/>
-    <path d="M95 95c-28 0-50-20-50-46 0-24 19-44 44-46C101-21 136-32 166-15c21 12 33 34 31 57 25 3 44 23 44 49" fill="none" stroke="url(#redline)" stroke-width="5" opacity=".75"/>
-    <text class="nodeText" x="83" y="62">Cloud Compute</text>
-    <text class="nodeSmall" x="96" y="82">Instance Pool</text>
+  <path d="M402 376H468" class="line"/>
+  <path d="M452 364l16 12-16 12" class="ink"/>
+
+  <g transform="translate(468 230)">
+    <rect width="310" height="292" class="ink"/>
+    <text x="28" y="38" class="label white">ONE MANAGED COMPUTE ALLOCATION</text>
+    <rect x="28" y="64" width="254" height="104" fill="#1e6b52"/>
+    <text x="48" y="97" class="label white">ORACLE CLOUD</text>
+    <text x="48" y="130" font-family="Arial,sans-serif" font-size="28" font-weight="700" class="white">Ubuntu VM</text>
+    <text x="48" y="153" font-family="Consolas,monospace" font-size="11" class="white">secure access · private env</text>
+    <line x1="28" y1="196" x2="282" y2="196" stroke="#586b65"/>
+    <text x="28" y="226" class="mono white">$ systemctl --type=service</text>
+    <circle cx="35" cy="252" r="6" fill="#65d49a"/>
+    <text x="52" y="257" class="mono white">all required processes active</text>
   </g>
 
-  <!-- node cards -->
-  <g filter="url(#shadow)">
-    <g transform="translate(86 190)">
-      <rect class="card" rx="18" width="260" height="138"/>
-      <circle cx="36" cy="40" r="15" fill="#5865f2"/><text class="mini" x="64" y="44">Discord Gateway</text>
-      <text class="muted" x="26" y="72">Events, commands, member updates</text>
-      <rect x="26" y="92" width="96" height="18" rx="9" fill="#112c40"/><circle cx="40" cy="101" r="4" class="ok pulse"/><text class="muted" x="52" y="105">Connected</text>
-    </g>
-    <g transform="translate(86 408)">
-      <rect class="card" rx="18" width="260" height="162"/>
-      <text class="mini" x="26" y="36">Journal Log Channel</text>
-      <text class="log" x="26" y="68">INFO bot-service ready</text>
-      <text class="log" x="26" y="92">POST /sync/member 200</text>
-      <text class="log" x="26" y="116">worker queue processed</text>
-      <text class="log" x="26" y="140">heartbeat OK 99.9%</text>
-    </g>
-    <g transform="translate(442 434)">
-      <rect class="card" rx="18" width="300" height="136"/>
-      <text class="mini" x="26" y="36">Bot Services</text>
-      <text class="muted" x="26" y="68">• command handler</text><text class="ok" x="224" y="68" font-size="12" font-weight="700">Running</text>
-      <text class="muted" x="26" y="96">• background worker</text><text class="ok" x="224" y="96" font-size="12" font-weight="700">Running</text>
-      <text class="muted" x="26" y="124">• sync scheduler</text><text class="ok" x="224" y="124" font-size="12" font-weight="700">Running</text>
-    </g>
-    <g transform="translate(812 180)">
-      <rect class="card" rx="18" width="300" height="164"/>
-      <text class="mini" x="26" y="38">Database + Config</text>
-      <text class="muted" x="26" y="72">Secrets, channel maps, user state</text>
-      <rect x="28" y="98" width="244" height="40" rx="12" fill="#081522" stroke="#25465d"/>
-      <text class="log" x="46" y="123">config.json • tokens hidden</text>
-    </g>
-    <g transform="translate(812 410)">
-      <rect class="card" rx="18" width="300" height="160"/>
-      <text class="mini" x="26" y="36">System Monitoring</text>
-      <g transform="translate(26 60)"><text class="muted">CPU</text><text class="mini" x="128">24%</text><path d="M0 34c22-20 44 12 68-5s39-5 64-22" class="thin" stroke="#42f5b6"/></g>
-      <g transform="translate(26 108)"><text class="muted">Uptime</text><text class="mini" x="128">99.9%</text><path d="M0 34c25-4 42-2 58-13s37 9 74-12" class="thin" stroke="#2ed3ff"/></g>
+  <path d="M778 376H844" class="line"/>
+  <path d="M828 364l16 12-16 12" class="ink"/>
+
+  <g transform="translate(844 230)">
+    <rect width="282" height="292" class="paper" stroke="#14221f" stroke-width="2"/>
+    <text x="24" y="36" class="label">OPERATIONS LAYER</text>
+    <g transform="translate(24 68)">
+      <text class="h" y="0">systemd</text><text class="body" y="24">starts and restarts services</text>
+      <line y1="43" x2="234" y2="43" class="softline"/>
+      <text class="h" y="81">journal logs</text><text class="body" y="105">one place to inspect failures</text>
+      <line y1="124" x2="234" y2="124" class="softline"/>
+      <text class="h" y="162">controlled deploys</text><text class="body" y="186">SSH, GitHub, and admin tooling</text>
     </g>
   </g>
 
-  <!-- mini flow nodes -->
-  <g transform="translate(378 302)">
-    <rect class="node" rx="14" width="104" height="68"/><text class="nodeText" x="27" y="30">API</text><text class="nodeSmall" x="20" y="50">FastAPI / Flask</text>
-  </g>
-  <g transform="translate(548 302)">
-    <rect class="node" rx="14" width="104" height="68"/><text class="nodeText" x="22" y="30">Worker</text><text class="nodeSmall" x="17" y="50">Queue Jobs</text>
-  </g>
-  <g transform="translate(718 302)">
-    <rect class="node" rx="14" width="104" height="68"/><text class="nodeText" x="21" y="30">Sync</text><text class="nodeSmall" x="14" y="50">Sheets / CRM</text>
-  </g>
-
-  <!-- connections -->
-  <path class="line flowA" d="M346 258 C390 258 402 302 430 302"/>
-  <path class="line flowA" d="M482 336 C510 336 520 336 548 336"/>
-  <path class="line flowA" d="M652 336 C680 336 690 336 718 336"/>
-  <path class="line flowA" d="M822 336 C860 314 860 284 812 256"/>
-  <path class="line flowB" d="M600 324 C608 260 610 230 580 190"/>
-  <path class="line flowB" d="M600 370 C610 410 612 430 590 434"/>
-  <path class="line flowB" d="M742 370 C792 404 806 450 812 490"/>
-  <path class="line flowB" d="M378 352 C320 390 286 412 346 470"/>
-
-  <!-- bottom summary -->
-  <g transform="translate(68 626)">
-    <rect x="0" y="0" width="1064" height="54" rx="24" fill="#07111d" stroke="#23465d"/>
-    <text class="mini" x="30" y="33">Flow:</text>
-    <text class="sub" x="78" y="34">Discord Event → Cloud Bot Service → API Worker → Data Sync → Logs + Monitoring</text>
-    <circle cx="1018" cy="27" r="9" class="ok pulse"/>
+  <g transform="translate(72 574)">
+    <line x1="0" y1="0" x2="1054" y2="0" class="softline"/>
+    <text x="0" y="38" class="label">WHY IT MATTERS</text>
+    <text x="160" y="38" class="body">Several connected services share one infrastructure baseline while keeping separate processes, secrets, logs, and restart rules.</text>
+    <rect x="0" y="66" width="1054" height="1" fill="#c8c2b6"/>
+    <text x="0" y="98" class="mono">Hosted: APIs · bots · workers · schedulers</text>
+    <text x="408" y="98" class="mono">Connected: Discord · n8n · third-party services</text>
+    <text x="875" y="98" class="mono">Status: healthy</text>
   </g>
 </svg>

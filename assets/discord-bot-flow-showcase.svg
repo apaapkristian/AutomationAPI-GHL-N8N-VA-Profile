@@ -1,15 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
-<defs><radialGradient id="g"><stop stop-color="#0e2b42"/><stop offset="1" stop-color="#040814"/></radialGradient><pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#183149" opacity=".55"/><circle r="1.2" fill="#2d5872"/></pattern><filter id="s"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-opacity=".45"/></filter><linearGradient id="b" x1="0" x2="1"><stop stop-color="#32d7ff"/><stop offset="1" stop-color="#5865f2"/></linearGradient><linearGradient id="ok" x1="0" x2="1"><stop stop-color="#4cf1a8"/><stop offset="1" stop-color="#14c768"/></linearGradient><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2l8 4-8 4z" fill="#38d9ff"/></marker><style>.t{font:800 52px Inter,Arial;fill:white}.st{font:500 20px Inter,Arial;fill:#a5cbe7}.h{font:800 20px Inter,Arial;fill:white}.m{font:600 14px Consolas,monospace;fill:#b9d7ec}.x{font:600 13px Inter,Arial;fill:#82a0b8}.card{fill:#091524;stroke:#24445f;stroke-width:1.2;filter:url(#s)}.node{fill:#0d1a2a;stroke:#2c536e;stroke-width:1.4;filter:url(#s)}.flow{fill:none;stroke:#38d9ff;stroke-width:4;stroke-dasharray:12 18;marker-end:url(#a);animation:dash 2.6s linear infinite}.flow2{stroke:#45f1a3;animation-delay:-1s}@keyframes dash{to{stroke-dashoffset:-120}}</style></defs>
-<rect width="1400" height="820" fill="url(#g)"/><rect width="1400" height="820" fill="url(#p)" opacity=".8"/>
-<circle cx="1020" cy="250" r="290" fill="#113b58" opacity=".18"/><circle cx="315" cy="605" r="240" fill="#5865f2" opacity=".1"/>
-<text x="70" y="105" class="t">Discord Bot Automation Flow</text><text x="72" y="142" class="st">A clean backend pipeline for events, commands, logs, alerts, and member actions.</text>
-<g transform="translate(80 210)"><rect class="node" width="230" height="150" rx="22"/><circle cx="56" cy="62" r="34" fill="#5865f2"/><text x="94" y="55" class="h">Discord Event</text><text x="94" y="82" class="x">message, role, order</text><text x="28" y="125" class="m">event.created → webhook</text></g>
-<g transform="translate(400 210)"><rect class="node" width="230" height="150" rx="22"/><rect x="28" y="36" width="52" height="52" rx="14" fill="#13283b" stroke="#34d3ff"/><text x="104" y="55" class="h">Bot Handler</text><text x="104" y="82" class="x">validates + routes</text><text x="28" y="125" class="m">status: 200 success</text></g>
-<g transform="translate(720 210)"><rect class="node" width="230" height="150" rx="22"/><rect x="28" y="34" width="62" height="58" rx="12" fill="#102130" stroke="#49f5a8"/><text x="114" y="55" class="h">Data Sync</text><text x="114" y="82" class="x">sheet / crm update</text><text x="28" y="125" class="m">member.status = active</text></g>
-<g transform="translate(1040 210)"><rect class="node" width="230" height="150" rx="22"/><circle cx="58" cy="64" r="32" fill="none" stroke="url(#ok)" stroke-width="8"/><text x="112" y="55" class="h">Action Taken</text><text x="112" y="82" class="x">role, DM, log post</text><text x="28" y="125" class="m">notify channel</text></g>
-<path class="flow" d="M310 285 C350 285 360 285 400 285"/><path class="flow flow2" d="M630 285 C670 285 680 285 720 285"/><path class="flow" d="M950 285 C990 285 1000 285 1040 285"/>
-<g transform="translate(115 485)"><rect class="card" width="360" height="230" rx="24"/><text x="28" y="45" class="h">Live Journal Logs</text><text x="28" y="82" class="m">11:41 INFO command received</text><text x="28" y="112" class="m">11:41 DEBUG checking member</text><text x="28" y="142" class="m">11:41 POST /api/discord/invite</text><text x="28" y="172" class="m">11:41 SUCCESS role assigned</text><circle cx="320" cy="42" r="8" fill="#4cf1a8"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle></g>
-<g transform="translate(520 485)"><rect class="card" width="360" height="230" rx="24"/><text x="28" y="45" class="h">Bot Commands</text><rect x="28" y="74" width="135" height="42" rx="12" fill="#102033" stroke="#345b77"/><text x="48" y="101" class="m">/verify</text><rect x="190" y="74" width="135" height="42" rx="12" fill="#102033" stroke="#345b77"/><text x="210" y="101" class="m">/ticket</text><rect x="28" y="136" width="135" height="42" rx="12" fill="#102033" stroke="#345b77"/><text x="48" y="163" class="m">/announce</text><rect x="190" y="136" width="135" height="42" rx="12" fill="#102033" stroke="#345b77"/><text x="210" y="163" class="m">/sync</text></g>
-<g transform="translate(925 485)"><rect class="card" width="360" height="230" rx="24"/><text x="28" y="45" class="h">System Health</text><text x="28" y="88" class="x">Bot Service</text><text x="245" y="88" class="m" fill="#4cf1a8">Running</text><text x="28" y="123" class="x">API Worker</text><text x="245" y="123" class="m" fill="#4cf1a8">Running</text><text x="28" y="158" class="x">Log Relay</text><text x="245" y="158" class="m" fill="#4cf1a8">Running</text><text x="28" y="196" class="m">uptime 99.9%</text></g>
-<path class="flow flow2" d="M250 430 C420 390 500 430 680 405 S990 400 1160 430"/>
-<text x="70" y="775" class="x">Generic portfolio visual only. No client names, no private data, no company branding.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Discord operations automation flow</title>
+  <desc id="desc">A five-step workflow showing Discord events and staff commands moving through permissions, business logic, APIs, operational actions, and audit logs.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f0e7}.paper{fill:#fffdf8}.ink{fill:#14221f}.orange{fill:#ff5a35}.green{fill:#1e6b52}.purple{fill:#5865f2}.line{stroke:#14221f;stroke-width:2;fill:none}.soft{stroke:#c8c2b6;stroke-width:1.5;fill:none}
+      .kicker{font:700 14px Consolas,monospace;letter-spacing:1.7px;fill:#c93618}.title{font:700 46px Arial,sans-serif;letter-spacing:-1.8px;fill:#14221f}.sub{font:400 18px Arial,sans-serif;fill:#5f6b66}.num{font:700 12px Consolas,monospace;fill:#c93618}.h{font:700 20px Arial,sans-serif;letter-spacing:-.4px;fill:#14221f}.body{font:400 14px Arial,sans-serif;fill:#5f6b66}.label{font:700 11px Consolas,monospace;letter-spacing:.8px;fill:#5f6b66}.small{font:700 12px Arial,sans-serif;fill:#14221f}.white{fill:#fffdf8}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1l8 4-8 4z" fill="#14221f"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <rect x="34" y="34" width="1132" height="652" fill="none" stroke="#14221f" stroke-width="2"/>
+  <text x="72" y="87" class="kicker">DISCORD OPERATIONS / AUTOMATION FLOW</text>
+  <text x="72" y="143" class="title">More than a chatbot: an operations layer.</text>
+  <text x="72" y="177" class="sub">Commands, community events, permissions, API actions, and staff visibility—connected in one workflow.</text>
+  <g transform="translate(953 72)"><rect width="173" height="92" class="purple"/><text x="18" y="30" class="label white">PLATFORM</text><text x="18" y="63" font-family="Arial,sans-serif" font-size="25" font-weight="700" class="white">Discord API</text></g>
+
+  <g transform="translate(72 250)">
+    <g>
+      <rect width="184" height="180" class="paper" stroke="#14221f" stroke-width="2"/>
+      <rect width="184" height="12" class="purple"/>
+      <text x="20" y="43" class="num">01 / INPUT</text>
+      <text x="20" y="79" class="h">Community event</text>
+      <text x="20" y="108" class="body">slash command</text><text x="20" y="130" class="body">role or member event</text><text x="20" y="152" class="body">scheduled trigger</text>
+    </g>
+    <path d="M184 90H218" class="line" marker-end="url(#arrow)"/>
+    <g transform="translate(228)">
+      <rect width="184" height="180" class="paper" stroke="#14221f" stroke-width="2"/>
+      <rect width="184" height="12" class="orange"/>
+      <text x="20" y="43" class="num">02 / GUARD</text>
+      <text x="20" y="79" class="h">Permission check</text>
+      <text x="20" y="108" class="body">staff role</text><text x="20" y="130" class="body">server and channel</text><text x="20" y="152" class="body">validated input</text>
+    </g>
+    <path d="M412 90H446" class="line" marker-end="url(#arrow)"/>
+    <g transform="translate(456)">
+      <rect width="184" height="180" class="ink"/>
+      <rect width="184" height="12" class="green"/>
+      <text x="20" y="43" class="num white">03 / LOGIC</text>
+      <text x="20" y="79" class="h white">Bot service</text>
+      <text x="20" y="108" class="body white">route the request</text><text x="20" y="130" class="body white">call APIs</text><text x="20" y="152" class="body white">handle exceptions</text>
+    </g>
+    <path d="M640 90H674" class="line" marker-end="url(#arrow)"/>
+    <g transform="translate(684)">
+      <rect width="184" height="180" class="paper" stroke="#14221f" stroke-width="2"/>
+      <rect width="184" height="12" class="orange"/>
+      <text x="20" y="43" class="num">04 / ACTION</text>
+      <text x="20" y="79" class="h">Operational result</text>
+      <text x="20" y="108" class="body">post or DM</text><text x="20" y="130" class="body">assign or archive</text><text x="20" y="152" class="body">sync external data</text>
+    </g>
+    <path d="M868 90H902" class="line" marker-end="url(#arrow)"/>
+    <g transform="translate(912)">
+      <rect width="184" height="180" class="paper" stroke="#14221f" stroke-width="2"/>
+      <rect width="184" height="12" class="green"/>
+      <text x="20" y="43" class="num">05 / RECORD</text>
+      <text x="20" y="79" class="h">Audit + status</text>
+      <text x="20" y="108" class="body">staff confirmation</text><text x="20" y="130" class="body">centralized log</text><text x="20" y="152" class="body">failure alert</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 484)">
+    <rect width="510" height="132" class="paper" stroke="#c8c2b6"/>
+    <text x="24" y="33" class="label">STAFF-FACING WORKFLOWS</text>
+    <text x="24" y="68" class="h">Commands that manage real operations</text>
+    <text x="24" y="96" class="body">Archive threads · control other bots · publish alerts · run checks</text>
+    <rect x="24" y="110" width="78" height="4" class="orange"/>
+  </g>
+  <g transform="translate(598 484)">
+    <rect width="498" height="132" class="paper" stroke="#c8c2b6"/>
+    <text x="24" y="33" class="label">CONNECTED BACKEND</text>
+    <text x="24" y="68" class="h">Hosted on the managed Oracle stack</text>
+    <text x="24" y="96" class="body">Python / Node.js · REST APIs · webhooks · systemd services</text>
+    <rect x="24" y="110" width="78" height="4" class="green"/>
+  </g>
+  <text x="72" y="657" class="label">OUTCOME / FASTER STAFF ACTIONS · CONSISTENT RULES · VISIBLE FAILURES · LESS REPEATED ADMIN</text>
+</svg>

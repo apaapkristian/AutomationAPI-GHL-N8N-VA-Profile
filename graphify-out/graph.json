@@ -1,0 +1,805 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "script",
+      "community": 0,
+      "norm_label": "script.js"
+    },
+    {
+      "label": "fallbackData",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "script_fallbackdata",
+      "community": 0,
+      "norm_label": "fallbackdata"
+    },
+    {
+      "label": "CONTACT_CHANNELS",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "script_contact_channels",
+      "community": 0,
+      "norm_label": "contact_channels"
+    },
+    {
+      "label": "CONTACT_ORDER",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "script_contact_order",
+      "community": 0,
+      "norm_label": "contact_order"
+    },
+    {
+      "label": "renderContactLinks()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "script_rendercontactlinks",
+      "community": 2,
+      "norm_label": "rendercontactlinks()"
+    },
+    {
+      "label": "loadData()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "script_loaddata",
+      "community": 0,
+      "norm_label": "loaddata()"
+    },
+    {
+      "label": "setText()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "script_settext",
+      "community": 1,
+      "norm_label": "settext()"
+    },
+    {
+      "label": "setHref()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "script_sethref",
+      "community": 2,
+      "norm_label": "sethref()"
+    },
+    {
+      "label": "normalizeEmbedUrl()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "script_normalizeembedurl",
+      "community": 0,
+      "norm_label": "normalizeembedurl()"
+    },
+    {
+      "label": "resolveProofData()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "script_resolveproofdata",
+      "community": 2,
+      "norm_label": "resolveproofdata()"
+    },
+    {
+      "label": "activeProofSlides()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "script_activeproofslides",
+      "community": 0,
+      "norm_label": "activeproofslides()"
+    },
+    {
+      "label": "proofSlideMediaMarkup()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "script_proofslidemediamarkup",
+      "community": 1,
+      "norm_label": "proofslidemediamarkup()"
+    },
+    {
+      "label": "lightboxMarkup()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L257",
+      "_origin": "ast",
+      "id": "script_lightboxmarkup",
+      "community": 3,
+      "norm_label": "lightboxmarkup()"
+    },
+    {
+      "label": "proofState",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L268",
+      "_origin": "ast",
+      "id": "script_proofstate",
+      "community": 0,
+      "norm_label": "proofstate"
+    },
+    {
+      "label": "setProofIndex()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "script_setproofindex",
+      "community": 1,
+      "norm_label": "setproofindex()"
+    },
+    {
+      "label": "updateProofCarousel()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L277",
+      "_origin": "ast",
+      "id": "script_updateproofcarousel",
+      "community": 1,
+      "norm_label": "updateproofcarousel()"
+    },
+    {
+      "label": "openLightbox()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "script_openlightbox",
+      "community": 3,
+      "norm_label": "openlightbox()"
+    },
+    {
+      "label": "closeLightbox()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L312",
+      "_origin": "ast",
+      "id": "script_closelightbox",
+      "community": 0,
+      "norm_label": "closelightbox()"
+    },
+    {
+      "label": "projectLightboxSlide()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "script_projectlightboxslide",
+      "community": 3,
+      "norm_label": "projectlightboxslide()"
+    },
+    {
+      "label": "bindProjectMediaLightbox()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L332",
+      "_origin": "ast",
+      "id": "script_bindprojectmedialightbox",
+      "community": 3,
+      "norm_label": "bindprojectmedialightbox()"
+    },
+    {
+      "label": "bindProfileLightbox()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L350",
+      "_origin": "ast",
+      "id": "script_bindprofilelightbox",
+      "community": 3,
+      "norm_label": "bindprofilelightbox()"
+    },
+    {
+      "label": "bindLightboxControls()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L368",
+      "_origin": "ast",
+      "id": "script_bindlightboxcontrols",
+      "community": 0,
+      "norm_label": "bindlightboxcontrols()"
+    },
+    {
+      "label": "bindProofCarouselControls()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L382",
+      "_origin": "ast",
+      "id": "script_bindproofcarouselcontrols",
+      "community": 1,
+      "norm_label": "bindproofcarouselcontrols()"
+    },
+    {
+      "label": "renderProof()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L391",
+      "_origin": "ast",
+      "id": "script_renderproof",
+      "community": 1,
+      "norm_label": "renderproof()"
+    },
+    {
+      "label": "initReveal()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L460",
+      "_origin": "ast",
+      "id": "script_initreveal",
+      "community": 2,
+      "norm_label": "initreveal()"
+    },
+    {
+      "label": "mediaMarkup()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L478",
+      "_origin": "ast",
+      "id": "script_mediamarkup",
+      "community": 2,
+      "norm_label": "mediamarkup()"
+    },
+    {
+      "label": "render()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L494",
+      "_origin": "ast",
+      "id": "script_render",
+      "community": 2,
+      "norm_label": "render()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_activeproofslides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L368",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_bindlightboxcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L350",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_bindprofilelightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L332",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_bindprojectmedialightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L382",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_bindproofcarouselcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L312",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_closelightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_contact_channels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_contact_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_fallbackdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L460",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_initreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_lightboxmarkup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_loaddata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L478",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_mediamarkup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_normalizeembedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_openlightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L322",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_projectlightboxslide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_proofslidemediamarkup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_proofstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": "L567",
+      "weight": 1.0,
+      "context": "argument",
+      "source": "script",
+      "target": "script_render",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_rendercontactlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L391",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_renderproof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_resolveproofdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_sethref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_setproofindex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_settext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "script",
+      "target": "script_updateproofcarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L560",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_rendercontactlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_settext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L397",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_settext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L504",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_sethref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "script_activeproofslides",
+      "target": "script_normalizeembedurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L547",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_resolveproofdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L415",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_activeproofslides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L431",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_proofslidemediamarkup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "script_openlightbox",
+      "target": "script_lightboxmarkup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L387",
+      "weight": 1.0,
+      "source": "script_bindproofcarouselcontrols",
+      "target": "script_setproofindex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "script_setproofindex",
+      "target": "script_updateproofcarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L457",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_updateproofcarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L358",
+      "weight": 1.0,
+      "source": "script_bindprofilelightbox",
+      "target": "script_openlightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "script_bindprojectmedialightbox",
+      "target": "script_openlightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L445",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_openlightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "script.js",
+      "source_location": "L373",
+      "weight": 1.0,
+      "source": "script_bindlightboxcontrols",
+      "target": "script_closelightbox",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "script_bindprojectmedialightbox",
+      "target": "script_projectlightboxslide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L545",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_bindprojectmedialightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L510",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_bindprofilelightbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L548",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_bindlightboxcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L456",
+      "weight": 1.0,
+      "source": "script_renderproof",
+      "target": "script_bindproofcarouselcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L547",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_renderproof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L549",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_initreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L535",
+      "weight": 1.0,
+      "source": "script_render",
+      "target": "script_mediamarkup",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
