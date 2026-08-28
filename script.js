@@ -182,7 +182,6 @@ function initProjectSheet(data) {
   const scrim = $("[data-project-scrim]");
   const launcher = $(".project-launcher");
   const toggles = [...document.querySelectorAll("[data-project-toggle]")];
-  const closeButton = $("[data-project-close]");
   const form = $("[data-project-form]");
   let previousFocus = null;
   let focusTimer;
@@ -212,7 +211,6 @@ function initProjectSheet(data) {
       setOpen(!shouldClose);
     });
   });
-  closeButton.addEventListener("click", () => setOpen(false));
   scrim.addEventListener("click", () => setOpen(false));
 
   form.addEventListener("submit", (event) => {
@@ -287,6 +285,48 @@ function initLightbox() {
   document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !lightbox.hidden) closeLightbox(); });
 }
 
+function initScrollFolds() {
+  const targets = document.querySelectorAll([
+    ".manifesto-inner",
+    ".section-heading",
+    ".plain-language",
+    ".comparison-card",
+    ".featured-case",
+    ".project-card",
+    ".service-row",
+    ".about-lead",
+    ".about-detail",
+    ".process-list li",
+    ".proof-showcase",
+    ".proof-item",
+    ".standard-card",
+    ".contact-inner"
+  ].join(","));
+
+  if (!targets.length) return;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  targets.forEach((target, index) => {
+    target.classList.add("fold-reveal");
+    target.style.setProperty("--fold-delay", `${(index % 3) * 70}ms`);
+  });
+  document.body.classList.add("motion-ready");
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    targets.forEach((target) => target.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -9% 0px", threshold: .12 });
+
+  targets.forEach((target) => observer.observe(target));
+}
+
 function render(data) {
   renderProfile(data);
   renderHero(data);
@@ -300,6 +340,7 @@ function render(data) {
   initNavigation();
   initProjectSheet(data);
   initLightbox();
+  initScrollFolds();
 }
 
 loadData().then(render).catch((error) => {
